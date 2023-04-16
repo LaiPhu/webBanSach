@@ -50,6 +50,7 @@ public class Constants {
             public static final String DATE = "2345678";
             public static final String USER_NAME = "laiphu123";
             public static final String PASS_WORD = "abc@123";
+            public static final String STATUS = "1";
 
         }
 
