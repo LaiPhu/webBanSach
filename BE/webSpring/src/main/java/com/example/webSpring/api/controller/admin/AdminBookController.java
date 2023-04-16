@@ -60,7 +60,7 @@ public class AdminBookController {
             }
     )
     @SecureApi
-    @PostMapping(value = ConstUrl.URL_BOOK + ConstUrl.URL_DELETE)
+    @PostMapping(value =ConstUrl.URL_DELETE)
     public ApiResponseEntity deleteBook(@RequestParam String bookId) {
         adminBookService.deleteBook(bookId);
         return ApiResponseEntity.bodyOk().build();

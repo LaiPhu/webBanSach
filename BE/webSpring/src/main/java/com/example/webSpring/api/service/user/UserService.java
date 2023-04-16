@@ -49,17 +49,17 @@ public class UserService {
     }
 
     public String loginUser(LoginVM loginVM){
-//        User user = userRepository.findDistinctFirstByPhoneNumber(loginVM.getPhoneNumber());
-//        if (user == null) {
-//            throw new BusinessException(ExceptionType.NOT_FOUND_USER);
-//        }
-//        Authentication authentication = authenticationManager.authenticate(
-//                new UsernamePasswordAuthenticationToken(loginVM.getPhoneNumber(), loginVM.getPassWord()));
-//
-//        SecurityContextHolder.getContext().setAuthentication(authentication);
-//
-//        String jwt = tokenProvider.generateToken(authentication);
-//        return jwt;
+        User user = userRepository.findDistinctFirstByPhoneNumber(loginVM.getPhoneNumber());
+        if (user == null) {
+            throw new BusinessException(ExceptionType.NOT_FOUND_USER);
+        }
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(loginVM.getPhoneNumber(), loginVM.getPassWord()));
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        String jwt = tokenProvider.generateToken(authentication);
+        return jwt;
         return null;
     }
 

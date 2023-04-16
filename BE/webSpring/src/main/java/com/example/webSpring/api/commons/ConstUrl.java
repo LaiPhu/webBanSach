@@ -7,6 +7,9 @@ public class ConstUrl {
     public static final String URL_HOME = "/home";
     public static final String URL_ACCOUNT = "/account";
     public static final String URL_BOOK = "/book";
+    public static final String URL_CATEGORY = "/category";
+    public static final String URL_AUTHOR = "/author";
+    public static final String URL_PUBLISHING_COMPANY= "/publishing-company";
     public static final String URL_IMAGE = "/image";
 
     //    CRUD URL

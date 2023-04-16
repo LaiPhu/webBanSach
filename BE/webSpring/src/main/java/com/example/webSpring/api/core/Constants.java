@@ -28,6 +28,9 @@ public class Constants {
             public static final String ACCOUNT = "account";
             public static final String HOME_MANAGEMENT = "Home Management";
             public static final String BOOK_MANAGEMENT = "Book Management";
+            public static final String CATEGORY_MANAGEMENT = "Category Management";
+            public static final String AUTHOR_MANAGEMENT = "Author Management";
+            public static final String PUBLISHING_COMPANY_MANAGEMENT = "Publishing Company Management";
             public static final String ACCOUNT_MANAGEMENT = "Account Management";
             public static final String IMAGE_MANAGEMENT = "Image Management";
 
